@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crediyt Hour System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="registration">
+        <div class="me">
+            <div class="col1 rounded-end">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center vh-100">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="img">
+                                <img src="css/imgs/Mesa de trabajo b12x.png" alt="Sim" width="500px" height="500px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center vh-100">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="infor my-4">
+                                <h1 class="text-capitalize fw-bold">registration</h1>
+                                <p class="text-capitalize text-muted">for new semaster</p>
+                            </div>
+                            <div class="container infor2">
+
+                                <form class="" action="http://localhost/CreditHours/regprocess.php" method="post">
+                                    <label class="text-capitalize mb-1" for="fullName">full name:</label>
+                                    <input type="text"  class="form-control mb-3 rounded" type="fullName"
+                                        name="fullName" id="fullName">
+
+                                    <label class="text-capitalize mb-1" for="email">e-mail:</label>
+                                    <input type="email" placeholder="sim.name@alexu.edu.eg" 
+                                        class="form-control mb-3 rounded" type="email" name="email" id="Email">
+
+                                    <div class="ohh">
+                                        <div class="pass mx-1">
+                                            <label class="text-capitalize mb-1" for="password">Password:</label>
+                                            <input type="password"  class="form-control mb-3 rounded"
+                                                 name="password" id="password">
+                                        </div>
+
+                                        <div class="conf-pass mx-1">
+                                            <label class="text-uppercase mb-1" for="id">id:</label>
+                                            <input type="number"  class="form-control mb-3 rounded" 
+                                                name="id" id="id">
+                                        </div>
+                                    </div>
+
+                                    <label class="text-capitalize mb-1" for="phoneNumber">phone number:</label>
+                                    <input type="tel"  class="form-control mb-3 rounded" type="phoneNumber"
+                                        name="phoneNumber" id="phoneNumber">
+
+                                    <label class="text-capitalize mb-1" for="birthday">birth-day:</label>
+                                    <input type="date"  class="form-control mb-3 rounded" type="birthday"
+                                        name="birthday" id="birthday">
+
+
+                                    <input type="submit" value="create an account"
+                                        class="btn text-capitalize mt-4 w-100 text-white">
+                                   
+                                        <p class="text-center text-muted text-capitalize mt-2 mb-5">already have an
+                                        account?<a class="px-1 text-capitalize mb-5" href="CreditsLogin_2.html"> sign
+                                            in</a></p>
+
+                                </form>
+
+                          
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    
+    <section class="subjectsTable">
+        <div class="container">
+
+            <div class="row justify-content-center text-capitalize">
+
+                <!------------------------------------------------------------------------------- first-half -------------------------------------------------------------------->
+                <div class="first-half col-md-9">
+                    <!---------- h1-regestration-title ------------->
+                    <div class="col-md-9 w-100 my-5">
+                        <div class="regestration position-relative fw-bold">
+                            <h1>regestration</h1>
+                        </div>
+                    </div>
+                    <!---------------------  ---------------------->
+
+
+
+                    <!------------ Resgestration-steps ------------->
+                    <div class="col-md-9 d-flex justify-content-evenly w-100 my-5">
+
+                        <div class="regist fw-bold text-center mx-2">
+                            <h5 class="circle d-flex justify-content-center align-items-center my-2 text-white">1
+                            </h5>
+                            <p>regestration</p>
+                        </div>
+
+                        <div class="regist fw-bold text-center mx-2">
+                            <h5 class="circle-1 step d-flex justify-content-center align-items-center my-2 text-white">
+                                2
+                            </h5>
+                            <p>confirmation</p>
+                        </div>
+
+                        <div class="regist fw-bold text-center mx-2">
+                            <h5 class="circle step d-flex justify-content-center align-items-center my-2 text-white">
+                                3
+                            </h5>
+                            <p>checkout</p>
+                        </div>
+
+                        <div class="regist fw-bold text-center mx-2">
+                            <h5 class="circle step d-flex justify-content-center align-items-center my-2 text-white">
+                                4
+                            </h5>
+                            <p>done</p>
+                        </div>
+
+                    </div>
+                    <!----------------------  ---------------------->
+
+                    <!------------ student-subject-table ------------>
+                    <div class="col-md-9 w-100 my-5">
+                        <div class="content d-flex justify-content-between">
+                            <div class="content-semaster bg-white my-2 rounded-3">
+                                <h5 class="py-2 px-3 fw-bold text-muted display-6s">fall semaster 2022</h5>
+                            </div>
+
+                            <div onkeyup="searchSubject(this.value)" class="d-flex justify-content-start align-items-center content-font">
+                                <input id="search" style="border: 1px solid white;" placeholder="Search Course"
+                                    class="p-2 rounded" type="text">
+                                <div class="settings mx-1 p-2 rounded-3 bg-white">
+                                    <i class="fa-solid text-muted p-1 fa-gear"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="text-center d-none table bg-white">
+                            <thead class="text-white bg-primary">
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        Course Code
+                                    </td>
+                                    <td>
+                                        Course Name
+                                    </td>
+                                    <td>
+                                        Credits
+                                    </td>
+                                    <td>
+                                        Status
+                                    </td>
+                                    <td>
+                                        Prerequisite
+                                    </td>
+                                    <td>
+                                        Campus
+                                    </td>
+                                    <td>
+                                        Passed
+                                    </td>
+                                    <td>
+                                        GPA
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody id="showSubjects" class="bg-white">
+                           
+                            </tbody>
+                            <tr class="table-total">
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <h5>Total Credits:</h5>
+                                </td>
+                                <td id="showSubjectsHours" class="fw-bold">__</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+
+                        <table class="text-center table">
+                            <thead class="text-white bg-primary">
+                                <tr>
+                                    <td>
+                                        Delete Course
+                                    </td>
+
+                                    <td>
+                                        Course Code
+                                    </td>
+                                    <td>
+                                        Course Name
+                                    </td>
+                                    <td>
+                                        Credits
+                                    </td>
+                                    <td>
+                                        Status
+                                    </td>
+                                    <td>
+                                        Prerequisite
+                                    </td>
+                                    <td>
+                                        Campus
+                                    </td>
+                                    <td>
+                                        Passed
+                                    </td>
+                                    <td>
+                                        GPA
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody id="selectedSubjects" class="bg-white">
+
+                            </tbody>
+                            <tr class="table-total">
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <h5>Total Credits:</h5>
+                                </td>
+                                <td id="selectedSubjectsHours" class="fw-bold">__</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+
+                        <table class="text-center d-none table">
+                            <thead class="text-white bg-primary">
+                                <tr>
+                                    <td>
+                                        Delete Course
+                                    </td>
+
+                                    <td>
+                                        Course Code
+                                    </td>
+                                    <td>
+                                        Course Name
+                                    </td>
+                                    <td>
+                                        Credits
+                                    </td>
+                                    <td>
+                                        Status
+                                    </td>
+                                    <td>
+                                        Prerequisite
+                                    </td>
+                                    <td>
+                                        Campus
+                                    </td>
+                                    <td>
+                                        Passed
+                                    </td>
+                                    <td>
+                                        GPA
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody id="passedSubjects" class="bg-white">
+
+                            </tbody>
+                            <tr class="table-total">
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <h5>Total Credits:</h5>
+                                </td>
+                                <td id="passedSubjectsHours" class="fw-bold">__</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+
+                        <a class="btn btn-primary fw-bold px-5 py-2 text-decoration-none text-primary mx-1 back"
+                            href="CreditsSubjects.html">back</a>
+
+                        <a class="nextBtn btn btn-primary fw-bold px-5 py-2 text-decoration-none text-white bg-primary mx-1 "
+                            href="DisplayCredits.html">next</a>
+
+                     
+
+
+                    </div>
+                    <!-----------------------  ---------------------->
+                </div>
+
+                <!------------------------------------------------------------------------------------  ----------------------------------------------------------------------------->
+
+
+                <!------------------------------------------------------------------------------- second-half -------------------------------------------------------------------->
+
+
+                <div class="second-half col-md-3 my-2">
+                    <!------------- Student-info-firstRightDiv ------------------>
+                    <div class="col-md-3 offset-1 border firstSubjectDetails w-100 my-2">
+                        <div class="firstSubjectDetails-items px-3 py-2">
+                            <div class="levelDetails d-flex justify-content-between align-items-center ">
+                                <div class="firstSubjectDetails-img mt-1">
+                                    <img class="img-fluid border-white rounded-circle w-100"
+                                        src="css/imgs/WhatsApp Image 2022-05-29 at 4.48.08 PM.jpeg" alt="Sim-User">
+                                </div>
+                                <div class="levelFont text-center">
+                                    <i class="fa-solid fa-crown rounded-circle bg-warning"
+                                        style="font-size: 0.85rem; padding: 0.3rem;"></i>
+                                    <p class="h6 my-1" style="font-size: 0.7rem;">Level: 2</p>
+                                </div>
+
+                            </div>
+
+                            <div class="firstSubjectDetails-titles px-2 my-2">
+                                <p class="h6 fw-bold">Name:</p>
+                                <p class="h6 fw-bold">Id:</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------------  ------------------------------>
+
+
+                    <!---------- Student-info-secondRightDiv ------------>
+                    <div class="col-md-3 offset-1 border sec-third-SubjectDetails w-100 my-3">
+                        <div class="sec-third-SubjectDetails-items p-3">
+                            <h5 class="fw-bold text-capitalize text-dark">my advisor</h5>
+                            <hr class="w-75 " style="color: #666;">
+                            <div class="levelDetails d-flex justify-content-between align-items-center ">
+                                <div class="sec-third-SubjectDetails-img mt-1">
+                                    <img class="rounded-3 w-100"
+                                        src="css/imgs/WhatsApp Image 2022-05-29 at 4.48.08 PM.jpeg" alt="Sim-User">
+                                </div>
+                            </div>
+
+                            <div class="sec-third-SubjectDetails-titles px-2 my-2">
+                                <p class="h6 text-capitalize fw-bolder text-primary">dr. emad ashmawy</p>
+                                <p class="text-capitalize mb-1 px-1 text-muted">sim office</p>
+                                <p class="text-capitalize text-muted">10:00AM - 12:00PM</p>
+                            </div>
+
+                            <button class="btn btn-primary text-primary text-capitalize fw-bold mt-2">more info</button>
+                        </div>
+                    </div>
+                    <!--------------------------  ----------------------->
+
+
+                    <!---------- Student-info-thirdRightDiv ------------>
+                    <div class="col-md-3 offset-1 border sec-third-SubjectDetails w-100 my-3">
+                        <div class="sec-third-SubjectDetails-items p-3">
+                            <h5 class="fw-bold text-capitalize text-dark mb-4">my program of study</h5>
+
+                            <div class="program-details">
+                                <p class="text-capitalize mb-1 fw-bold text-primary">college: <span
+                                        class="text-muted fw-normal text-capitalize">faculty of science</span></p>
+                                <p class="text-capitalize mb-1 fw-bold text-primary">degree: <span
+                                        class="text-muted fw-normal text-capitalize">bachelor</span></p>
+                                <p class="text-capitalize mb-1 fw-bold text-primary">major: <span
+                                        class="text-muted fw-normal text-capitalize">computer science</span></p>
+                                <p class="text-capitalize mb-1 fw-bold text-primary">minor: <span
+                                        class="text-muted fw-normal text-capitalize">multimedia</span></p>
+                            </div>
+                            <button class="btn btn-primary text-primary text-capitalize fw-bold mt-3">visit
+                                site</button>
+
+                        </div>
+                    </div>
+                    <!--------------------------  ----------------------->
+
+
+                </div>
+
+                <!------------------------------------------------------------------------------------  ----------------------------------------------------------------------------->
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Hour System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.0-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="Login">
+
+        <div class="me">
+            <div class="col-img rounded-end vh-100">
+                <div class="shadow2"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="img1">
+                                <img src="css/imgs/Mesa de trabajo b12x.png" alt="Sim" width="300px" height="300px" />
+                            </div>
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="content2">
+                                <h3><span class='fw-bold'>SIM</span> Student Portal </h3>
+                                <p>SIM Student Portal is an online gateway where students can log in
+                                    to access important program information.
+                                    <br>
+                                    <br>
+                                    Student Portal contain information on : <br>
+                                    courses, transcripts, timetables, exam schedules and department cont.txt
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center vh-100  position-relative">
+                        <div id="login" class="col-md-6 col-sm-12">
+                            <div class="infor my-4">
+                                <h1 class="text-capitalize fw-bold">login</h1>
+                                <p class="text-capitalize text-muted">for new semaster</p>
+                            </div>
+                            <div class="container infor2">
+             
+
+                                <form action="http://localhost/CreditHours/logproc.php" method="post">
+                                    <label class="text-capitalize mb-1" for="id">university <span
+                                            class="text-uppercase">id</span>:</label>
+                                    <input type="number" placeholder="Univ ID" required
+                                        class="form-control mb-3 rounded"  name="id" id="id">
+
+                                    <label class="mb-1" for="password">Password:</label>
+                                    <input type="password" required class="form-control rounded" 
+                                        name="password" id="password">
+                                
+            
+                                    <input type="submit" value="sign in"  class="btn text-capitalize mt-4 w-100 text-white">
+
+                                    <a class="text-decoration-none text-white" href="CreditsRegistartion_3.html"><button
+                                            type="button"
+                                            class="btn text-capitalize mt-2 w-100 text-white">registration</button></a>
+
+                                    <p class="text-center text-muted text-capitalize mt-2 mb-5">forgot
+                                        password?<a class="px-1 text-primary text-capitalize mb-5"
+                                            href="CreditsForgetPassword.html">click
+                                            here</a> to send your password</p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-12 copyRights position-absolute bottom-0 left-50">
+                            <hr class="mx-auto" style="width: 45%;">
+                            <p class="text-muted text-center" style="font-size: x-small;">Copyright @ 2022 Information
+                                And
+                                Documentation
+                                Center - ALPHA</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

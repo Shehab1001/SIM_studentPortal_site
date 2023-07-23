@@ -1,0 +1,279 @@
+.carousel-item {
+  height: 100vh;
+  position: relative;
+  background-image: url(imgs/Screenshot\ 2022-05-04\ 225335.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.shadow {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #0061f2a5 !important;
+}
+
+.img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px !important;
+  height: 400px !important;
+  border-radius: 5%;
+  background-color: white;
+  z-index: 2;
+}
+
+.content h1 {
+  position: relative;
+  z-index: 3;
+  font-size: 3.5rem !important;
+  color: white;
+}
+
+.content p {
+  position: relative;
+  z-index: 3;
+  font-size: 1.5rem !important;
+  color: white;
+}
+
+.content1 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 10%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #0066FF;
+  font-size: 3rem !important;
+  transition: all 1s ease-in-out;
+}
+
+.shadow1 {
+  position: absolute;
+  left: 0;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: #0066FF;
+  border-radius: 10%;
+  transition: all 0.5s ease-in-out;
+}
+
+.content1:hover .shadow1 {
+  right: 0;
+}
+
+.content1:hover {
+  color: white;
+}
+
+.cont {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+
+/********************************************* page 2 ****************************************************/
+
+.me {
+  display: flex;
+
+}
+
+.img1 {
+  margin: 30% 0 0 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px !important;
+  height: 250px !important;
+  border-radius: 10%;
+  background-color: white;
+  z-index: 2;
+}
+
+.content2 {
+  margin: 10% 0 0 17.5%;
+}
+
+.shadow2 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #0061f27f !important;
+}
+
+.content2 h3 {
+  position: relative;
+  z-index: 3;
+  font-size: 2.5rem !important;
+  color: white;
+}
+
+.content2 p {
+  position: relative;
+  z-index: 3;
+  font-size: 1rem !important;
+  color: white;
+  line-height: 1.5rem;
+}
+
+.col-img {
+  background-image: url(imgs/Screenshot\ 2022-05-05\ 000553.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  position: relative;
+}
+
+.col1 {
+  width: 50%;
+  background-color: #0066FF;
+  height: 100vh;
+}
+
+.col2 {
+  width: 50%;
+  background-color: white;
+  height: 100vh;
+}
+
+.btn {
+  background-color: #0066FF !important;
+}
+
+.ohh {
+  display: flex;
+
+}
+
+.infor2 {
+  font-size: 0.8rem;
+}
+
+#resetPass {
+  cursor: pointer;
+}
+
+/*************************************** select-subjects ********************************************/
+.subjectsTable {
+  height: auto;
+  background-color: rgb(241, 241, 250) !important;
+}
+
+
+.regestration h1::before {
+  content: "";
+  position: absolute;
+  left: -11;
+  top: 6;
+  height: 40px;
+  width: 5px;
+  border-radius: 15%;
+  background-color: #0066FF;
+}
+
+.table-total {
+  background-color: #a6bad7;
+}
+
+.circle {
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #0066ff78;
+  border-radius: 50%;z-index: 10;
+
+}
+
+.circle-1 {
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #0066FF;
+  border-radius: 50%;
+}
+
+
+
+.regist{
+width: 8rem;
+}
+
+.step{
+position: relative;
+}
+
+.step::before{
+  content: "";
+  position: absolute;
+  left: -425%;
+  top: 50%;
+  width: 10rem;
+  height: 0.25rem;
+  border-radius: 20px;
+  background-color: #a6bad7;
+} 
+
+/******************************************** student-info & subject-deatails (the first right-side divs) ******************************************/
+.firstSubjectDetails{
+  color: white;
+  background-color: #2b78eb;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.firstSubjectDetails-img{
+  width: 20%;
+}
+
+.firstSubjectDetails-img img{
+  width: 100%;
+}
+/************************************************************************  *************************************************************************/
+
+
+
+/********************************************** student-info & subject-deatails (the second & third right-side divs) *************************************/
+
+
+  .sec-third-SubjectDetails{
+    color: white;
+    background-color: #FFFFFF;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .sec-third-SubjectDetails-img{
+    width: 30%;
+    border: 1px solid #2b78eb;
+    border-radius: 5px;
+  }
+  
+  .sec-third-SubjectDetails-img img{
+    width: 100%;
+  }
+
+  .sec-third-SubjectDetails button,.back{
+    background-color: #EEF5FF !important;
+  }
+
+/********************************************** student-info & subject-deatails (the third right-side divs) *************************************/
